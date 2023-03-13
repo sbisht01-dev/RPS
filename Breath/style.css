@@ -1,0 +1,11 @@
+.container{
+    background-color: red;
+}
+
+.container-grow{
+    background-color: black;
+}
+
+.container-shrink{
+    background-color: yellow;
+}

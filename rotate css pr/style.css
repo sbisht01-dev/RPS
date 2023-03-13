@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.rot{
+    background-color: rgb(47, 158, 91);
+    height: 700px;
+    border-radius: 20px;
+    rotate: -10deg;
+    position: relative;
+    top:-300px;
+    right: -20px;
+}
+
+
+
+
+
+
+
+
+

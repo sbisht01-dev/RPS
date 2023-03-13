@@ -1,0 +1,161 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --hover-shadow: rgb(141, 141, 141);
+  --input-shadow:  rgb(90, 90, 90);
+}
+
+.container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+#label-output{
+  font-size: 24px;
+  
+}
+
+.input-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-container>input:focus{
+  display: inline-block;
+  outline: none;
+  height: 50px;
+  width: 550px;
+  border: none;
+  box-shadow: 0px 10px 20px var(--hover-shadow);
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+
+  /*ipad*/
+@media (min-width:800px){
+  .container{
+    background-color: red;
+  }
+} 
+
+
+  /* tablet*/
+@media (min-width:600px) {
+  .input-container input{
+    height: 50px;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 10px 20px var(--input-shadow);
+    border-radius: 10px;
+    font-size: 20px;
+    transition:  0.3s;
+    background-color: black;
+  }
+
+  .input-container input:hover{
+    height: 55px;
+    width: 550px;
+    border: none;
+    box-shadow: 0px 10px 20px var(--hover-shadow);
+    border-radius: 5px;
+    font-size: 20px;
+  }
+}
+
+.note-display{
+  background-color: rgb(25, 38, 97);
+  grid-row: 2/10;
+  transition: 0.3s;
+  grid-column: 1/13;
+}
+
+
+
+
+  /*mobile*/
+@media (min-width: 350px){
+  .container{
+    width: 100%;
+    overflow:auto;
+    display: grid;
+    transition: 0.3s;
+  }
+
+  .grid-span-2{
+    grid-column: 3/11;
+  }
+
+  .input-container{
+    grid-row: 1/2;
+    position: relative;
+  }
+
+  .input-container input{
+    height: 50px;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 10px 20px var(--input-shadow);
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+
+  .note-display{
+    width: 100%;
+    grid-row: 2/10;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    justify-content: center;
+    padding-top: 40px;
+    margin: auto;
+    grid-gap:40px
+  }
+
+
+  .note-preview{
+    grid-row: auto;
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    max-height: 280px;
+    min-height: 50px;
+    width: 150px;
+    overflow: auto;
+    box-shadow: 4px 4px 10px rgb(163, 163, 163);
+    z-index: 200;
+  }
+
+
+
+  .note-display :nth-of-type(even){
+    grid-column: 7/12;
+    background-color: rgb(92, 201, 92);
+  }
+
+  .note-display :nth-of-type(odd){
+    grid-column: 2/7;
+    background-color: rgb(204, 157, 71);
+  }
+
+
+
+
+
+
+

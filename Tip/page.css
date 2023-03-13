@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(230, 230, 230) ;
+}
+
+p{
+    display: inline;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 550px;
+}
+
+.bill{
+    padding: 20px;
+}
+
+.tip{
+    padding: 20px;
+}
+
+.text_para{
+    font-size: 24px;
+    font-weight: 500;
+}

@@ -1,0 +1,11 @@
+.buttons{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 250px;
+    border-color: black;
+    box-sizing: border-box;
+    box-shadow: inset 5px 5px 8px rgb(137, 136, 136), 5px 5px 20px rgb(57, 57, 57);
+    box-shadow:  ;
+    color: white;
+}
