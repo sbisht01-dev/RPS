@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="/ACI/rsrc/logo.png1" type="image/x-icon">
     <script src="script.js"></script>
     <title>ACI</title>
 </head>
@@ -20,23 +21,25 @@
         <div class="main-body">
 
             <div class="bg-video">
-                <video id="earth-rotate" src="rsrc/earth-27168.mp4" autoplay loop></video>
+                <video autoplay muted loop>
+                    <source src="/ACI/rsrc/earth-26070.mp4" type="video/mp4" />
+                </video>
             </div>
 
             <header>
-                <div class="logo"> <img src="/ACI/rsrc/logo.png"> </div>
+                <div id="logo" onclick="remove(this)"> <img src="/ACI/rsrc/logo.png"> </div>
                 <nav class="navigation-link">
                     <ul>
-                        <a class="links" id="home" href="#">
+                        <a class="links" id="home" href="index.html">
                             <li>HOME</li>
                         </a>
-                        <a class="links" id="what" href="#">
+                        <a class="links" id="what" href="wwd.html">
                             <li>WHAT WE DO</li>
                         </a>
-                        <a class="links" id="get" href="#">
+                        <a class="links" id="get" href="ge.html">
                             <li>GET ENVOLVED</li>
                         </a>
-                        <a class="links" id="about" href="#">
+                        <a class="links" id="about" href="about.html">
                             <li>ABOUT</li>
                         </a>
                     </ul>
@@ -46,6 +49,10 @@
                     <button>CONTACT US</button>
                 </div>
             </header>
+
+            <div class="secondary-container">
+
+            </div>
         </div>
     </div>
 
